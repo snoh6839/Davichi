@@ -108,7 +108,7 @@
         <div id='mainbanner' class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="inner swiper-slide first">
-              <video src="./video/video01.mp4" autoplay loop>
+              <video src="./video/video01.mp4">
               </video>
               <div class="maintext">
                 <h2>신뢰할 수 있는 Healthcare 브랜드</h2>
@@ -150,27 +150,30 @@
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-          <div class="video-control">
-            <div class="progress-wrap">
-              <div class="progress-bar"></div>
-              <div class="progress-bar"></div>
-              <div class="progress-bar"></div>
-              <div class="progress-bar"></div>
-              <div class="progress-bar"></div>
-              <div class="progress-bar"></div>
-            </div>
-            <div class="control-btn">
-              <button class="play"></button>
-              <button class="pause"></button>
+          <div class="swiper-pagination">
+            <div class="video-control">
+              <div class="progress-wrap">
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
+              </div>
+              <div class="control-btn">
+                <button class="play"></button>
+                <button class="pause"></button>
+              </div>
             </div>
           </div>
+
           <div class="scroll-mouse">
             <img src="./img/icons/icon-scroll.png">
           </div>
         </div>
       </div>
     </section>
+
     <section class="count-year">
       <div class="count-items">
         <span>
@@ -197,61 +200,22 @@
     </section>
     <section id="products">
       <div>
-        <a href="">
-          <span></span>
-          <div>
-            <img src="" alt="">
-          </div>
-        </a>
+        <button class="btn"><span>안경테</span></button>
       </div>
       <div>
-        <a href="">
-          <span></span>
-          <div>
-            <img src="" alt="">
-          </div>
-        </a>
+        <button class="btn"><span>안경렌즈</span></button>
       </div>
       <div>
-        <a href="">
-          <span></span>
-          <div>
-            <img src="" alt="">
-          </div>
-        </a>
+        <button class="btn"><span>콘텍트렌즈</span></button>
       </div>
       <div>
-        <a href="">
-          <span></span>
-          <div>
-            <img src="" alt="">
-          </div>
-        </a>
+        <button class="btn"><span>보청기</span></button>
       </div>
     </section>
     <section>
-      <article>
-        <img src="" alt="">
-        <div>
-          <h3>
-            <div></div>
-            <div></div>
-          </h3>
-          <p></p>
-          <a href=""></a>
-        </div>
-      </article>
-      <article>
-        <img src="" alt="">
-        <div>
-          <h3>
-            <div></div>
-            <div></div>
-          </h3>
-          <p></p>
-          <a href=""></a>
-        </div>
-      </article>
+      
+    </section>
+    <section>
       <div class="quick-menu">
         <a href="
         "><span class="quick-menu-inner">
@@ -346,9 +310,9 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         loop: true,
-        autoplay: {
-          delay: 2500,
-        },
+        // autoplay: {
+        //   delay: 2500,
+        // },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -357,8 +321,6 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-      }
-      }
       });
     </script>
   </div>
