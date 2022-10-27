@@ -296,7 +296,7 @@ a {
   background-image: url('../img/img-product-bo.png');
 }
 
-#products > div button {
+.common-btn {
   font-size: 36px;
   padding-left: 10px;
   padding-bottom: 8px;
@@ -319,16 +319,16 @@ a {
 
 
 
-#products > div button.btn span {
+#products > div .common-btn span {
   position: relative;
   z-index: 1;
 }
 
-#products > div:hover button.btn {
+#products > div:hover .common-btn {
   color: #fff;
 }
 
-#products > div:hover button.btn:after{
+#products > div:hover .common-btn:after{
   content: "";
     top: 0;
     position: absolute;
@@ -356,4 +356,47 @@ a {
   width: 500px;
   height: 500px;
 }
+}
+
+#fourth {
+  background-color: #f2efed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    background-image: url(../img/img-main-fullbanner-01.png);
+}
+
+#fourth .inner {
+  width: 1320px;
+    min-height: 650px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#fourth .inner .box {
+    text-align: left;
+    float: left;
+    width: 50%;
+    min-height: 650px;
+}
+
+#fourth .inner .box .text-box {
+    padding-left: 50px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 160.5px;
+}
+
+#fourth .text-box h2 {
+    line-height: 60px;
+    font-size: 45px;
+}
+
+#fourth  .inner .subtitle {
+    margin-top: 22px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
 }
