@@ -85,8 +85,11 @@ a {
   font-size: 14px;
   height: 80px;
   line-height: 80px;
-  ;
   background: white;
+}
+
+.header-wrap .gnb .sub-menu > ul > li:hover > a {
+  color: #0056aa;
 }
 
 .header-wrap .gnb .sub-menu .sub-menu-title {
@@ -116,7 +119,7 @@ a {
   box-sizing: border-box;
   border: none; background: transparent;
   color: inherit;
-  font-weight: bold;
+  font-weight: bold; cursor: pointer;
 }
 
 
@@ -183,3 +186,14 @@ a {
 }
 
 .swiper-pagination {position: absolute;}
+
+.scroll-mouse {position: relative; width: 100%; display: flex; justify-content: center;
+margin-bottom: 60px; animation: upDown .5s linear 0s infinite alternate;}
+.scroll-mouse > img {position: absolute;
+object-fit: cover; z-index: 500;     bottom: 0;
+    margin-bottom: inherit;
+}
+@keyframes upDown {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
