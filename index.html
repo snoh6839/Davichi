@@ -95,21 +95,20 @@
           </ul>
         </nav>
         <div class="header-utils">
-          <div class="header-search">
+          <button class="header-search">
             <span>매장찾기</span>
-          </div>
-          <div class="header-market">
+          </button>
+          <button class="header-market">
             <span>다비치 마켓</span>
-            <img src="
-            " alt="">
-          </div>
+            <img src="./img/icons/icon-arrow.png" alt="">
+          </button>
         </div>
       </div>
       <div class="swiper-container">
         <div id='mainbanner' class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="inner swiper-slide first">
-              <video src="./video/video01.mp4">
+              <video src="./video/video01.mp4" autoplay loop>
               </video>
               <div class="maintext">
                 <h2>신뢰할 수 있는 Healthcare 브랜드</h2>
@@ -172,28 +171,6 @@
           </div>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          loop: true,
-          autoplay: {
-            delay: 2500,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          on: {
-            $('video').attr("autoplay")
-          }
-        }
-        }
-        });
-      </script>
       <div class="count-year">
         <div class="count-items">
           <span>
@@ -378,6 +355,25 @@
       </div>
     </footer>
     <button class="go-to-top"><img src="" alt=""></button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    }
+  }
+});
+</script>
   </div>
 </body>
 

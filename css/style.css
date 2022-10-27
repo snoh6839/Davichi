@@ -64,9 +64,20 @@ a {
   padding-right: 0;
 }
 
+.header-wrap .gnb .main-menu:hover {
+  color: #0056aa;
+}
+
+.header-wrap .gnb .main-menu:hover > a {
+  border-bottom: 1px solid #0056aa;
+  padding-bottom: 30px;
+}
+
 .header-wrap .gnb .main-menu:hover .sub-menu {
   display: block;
   text-align: center;
+  color: black;
+
 }
 
 .header-wrap .gnb .sub-menu {
@@ -76,7 +87,6 @@ a {
   line-height: 80px;
   ;
   background: white;
-  border-top: 1px solid #dbdcdd;
 }
 
 .header-wrap .gnb .sub-menu .sub-menu-title {
@@ -100,14 +110,32 @@ a {
   display: flex;
 }
 
-.header-utils div {
+.header-utils button {
   font-size: 12px;
-  padding-right: 32px;
+  margin-right: 32px;
   box-sizing: border-box;
+  border: none; background: transparent;
+  color: inherit;
+  font-weight: bold;
 }
 
-.header-utils div:last-child {
-  padding-right: 0;
+
+.header-utils button:last-child {
+  margin-right: 0;
+}
+
+.header-wrap:hover .header-utils {
+  color: #fff; display: flex;
+  align-items: center;
+}
+
+.header-wrap:hover .header-utils .header-search {
+  background: #222; height: 32px; width: 80px;
+  border-radius: 16px;
+}
+
+.header-wrap:hover .header-utils .header-market {
+  background: #0056aa; height: 32px; width: 118px; border-radius: 15px;
 }
 
 .mySwiper {
@@ -153,3 +181,5 @@ a {
 .maintext p {
   font-size: 24px;
 }
+
+.swiper-pagination {position: absolute;}
