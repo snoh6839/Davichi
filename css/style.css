@@ -1,5 +1,155 @@
 @charset "UTF-8";
 
-html,body{height: 100%; scroll-behavior: smooth;}
-*{margin:0; padding:0;}
-a{text-decoration:none;}
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-wrap {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-weight: bold;
+  height: 80px;
+  line-height: 80px;
+}
+
+.header-wrap img.logo-a {
+  display: block;
+  top: 20px;
+}
+
+.header-wrap img.logo-c {
+  position: absolute;
+  display: none;
+}
+
+.header-wrap:hover {
+  background: #fff;
+  color: black;
+  border-top: 1px solid #dbdcdd;
+}
+
+.header-wrap:hover img.logo-c {
+  display: block;
+  top: 20px;
+}
+
+.header-wrap .gnb {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header-wrap .gnb .main-menu {
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.header-wrap .gnb .main-menu:last-child {
+  padding-right: 0;
+}
+
+.header-wrap .gnb .main-menu:hover .sub-menu {
+  display: block;
+  text-align: center;
+}
+
+.header-wrap .gnb .sub-menu {
+  display: none;
+  font-size: 14px;
+  height: 80px;
+  line-height: 80px;
+  ;
+  background: white;
+  border-top: 1px solid #dbdcdd;
+}
+
+.header-wrap .gnb .sub-menu .sub-menu-title {
+  display: flex;
+  position: absolute;
+  background: white;
+  width: 100%;
+  justify-content: center;
+  left: 0;
+}
+
+.header-wrap .gnb .sub-menu .sub-menu-title li {
+  padding-right: 40px;
+}
+
+.header-wrap .gnb .sub-menu .sub-menu-title li:last-child {
+  padding-right: 0;
+}
+
+.header-utils {
+  display: flex;
+}
+
+.header-utils div {
+  font-size: 12px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
+.header-utils div:last-child {
+  padding-right: 0;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100vh;
+  min-width: 1500px;
+  margin: 0;
+  padding: 0;
+  /* position: absolute; */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.swiper-slide video {
+  /* display: block; */
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.maintext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-left: 207px;
+  color: #fff;
+}
+
+.maintext h2 {
+  font-size: 50px;
+  margin-bottom: 36px;
+}
+
+.maintext p {
+  font-size: 24px;
+}

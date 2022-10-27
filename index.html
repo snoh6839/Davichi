@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width height=device-height">
   <title>DAVICH</title>
   <link rel="stylesheet" href="./css/initial.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel='stylesheet' href='./css/swiper.css'>
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/comon.js"></script>
@@ -16,129 +18,140 @@
 <body>
   <div class="container">
     <header>
-      <h1>
-        <a href="">logo
-          <img src="" alt="">
-        </a>
-      </h1>
-      <nav>
-        <ul class="gnb">
-          <li class="main-menu">
-            <a href="">about</a>
-            <div class="sub-menu">
-              <ul class="sub-menu-title">
-                <li><a href="">대표 인사말</a></li>
-                <li><a href="">기업소개</a></li>
-                <li><a href="">비주얼 아이덴티티</a></li>
-                <li><a href="">사회공헌</a></li>
-                <li><a href="">오시는 길</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-menu">
-            <a href="">products</a>
-            <div class="sub-menu">
-              <ul class="sub-menu-title">
-                <li><a href="">안경테</a></li>
-                <li><a href="">안경렌즈</a></li>
-                <li><a href="">콘텍트렌즈</a></li>
-                <li><a href="">보청기</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-menu">
-            <a href="">partnership</a>
-            <div class="sub-menu">
-              <ul class="sub-menu-title">
-                <li><a href="">가맹점 현황</a></li>
-                <li><a href="">가맹점 개설안내</a></li>
-                <li><a href="">가맹점 개설문의</a></li>
-                <li><a href="">제휴문의</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-menu">
-            <a href="">education</a>
-            <div class="sub-menu">
-              <ul class="sub-menu-title">
-                <li><a href="">고객가치 경영 연구원</a></li>
-                <li><a href="">다비치 사관&middot;공채</a></li>
-                <li><a href="">사관&middot;공채 모집</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-menu">
-            <a href="">what's new</a>
-            <div class="sub-menu">
-              <ul class="sub-menu-title">
-                <li><a href="">광고/홍보영상</a></li>
-                <li><a href="">다비치 소식</a></li>
-                <li><a href="">이벤트</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-menu">
-            <a href="">support</a>
-            <div class="sub-menu">
-              <ul class="sub-menu-title">
-                <li><a href="">고객의 소리</a></li>
-                <li><a href="">자주하는 질문</a></li>
-                <li><a href="">상품권 구매</a></li>
-                <li><a href="">매장찾기</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-utils">
-        <div class="header-search">
-          <span>매장찾기</span>
-        </div>
-        <div class="header-market">
-          <span>다비치 마켓</span>
-          <img src="
-          " alt="">
+      <div class="header-wrap">
+        <h1>
+          <a href="index.html">
+            <img src="./img/logo-white.png" alt="logo" class="logo-w">
+            <img src="./img/logo-color.png" alt="logo" class="logo-c">
+          </a>
+        </h1>
+        <nav>
+          <ul class="gnb">
+            <li class="main-menu">
+              <a href="">about</a>
+              <div class="sub-menu">
+                <ul class="sub-menu-title">
+                  <li><a href="">대표 인사말</a></li>
+                  <li><a href="">기업소개</a></li>
+                  <li><a href="">비주얼 아이덴티티</a></li>
+                  <li><a href="">사회공헌</a></li>
+                  <li><a href="">오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu">
+              <a href="">products</a>
+              <div class="sub-menu">
+                <ul class="sub-menu-title">
+                  <li><a href="">안경테</a></li>
+                  <li><a href="">안경렌즈</a></li>
+                  <li><a href="">콘텍트렌즈</a></li>
+                  <li><a href="">보청기</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu">
+              <a href="">partnership</a>
+              <div class="sub-menu">
+                <ul class="sub-menu-title">
+                  <li><a href="">가맹점 현황</a></li>
+                  <li><a href="">가맹점 개설안내</a></li>
+                  <li><a href="">가맹점 개설문의</a></li>
+                  <li><a href="">제휴문의</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu">
+              <a href="">education</a>
+              <div class="sub-menu">
+                <ul class="sub-menu-title">
+                  <li><a href="">고객가치 경영 연구원</a></li>
+                  <li><a href="">다비치 사관&middot;공채</a></li>
+                  <li><a href="">사관&middot;공채 모집</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu">
+              <a href="">what's new</a>
+              <div class="sub-menu">
+                <ul class="sub-menu-title">
+                  <li><a href="">광고/홍보영상</a></li>
+                  <li><a href="">다비치 소식</a></li>
+                  <li><a href="">이벤트</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-menu">
+              <a href="">support</a>
+              <div class="sub-menu">
+                <ul class="sub-menu-title">
+                  <li><a href="">고객의 소리</a></li>
+                  <li><a href="">자주하는 질문</a></li>
+                  <li><a href="">상품권 구매</a></li>
+                  <li><a href="">매장찾기</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-utils">
+          <div class="header-search">
+            <span>매장찾기</span>
+          </div>
+          <div class="header-market">
+            <span>다비치 마켓</span>
+            <img src="
+            " alt="">
+          </div>
         </div>
       </div>
-    </header>
-    <section>
-      <div class="section-container-1">
-        <div class="slider index">
-          <div class="slide">
-            <video src=""></video>
-            <div class="slide-text">
-              <h2>신뢰할 수 있는 Healthcare 브랜드</h2>
-              <p>당신과 함께하는 우리는 다비치 입니다.</p>
+      <div class="swiper-container">
+        <div id='mainbanner' class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="inner swiper-slide first">
+              <video src="./video/video01.mp4">
+              </video>
+              <div class="maintext">
+                <h2>신뢰할 수 있는 Healthcare 브랜드</h2>
+                <p>당신과 함께하는 우리는 다비치 입니다.</p>
+              </div>
+            </div>
+            <div class="inner swiper-slide second">
+              <video src="./video/video02.mp4">
+              </video>
+              <div class="maintext">
+                <h2>No.1 DAVICH Optical</h2>
+                <p>빛이 되어 드리겠습니다.</p>
+              </div>
+            </div>
+            <div class="inner swiper-slide third">
+              <video src="./video/video03.mp4">
+              </video>
+              <div class="maintext">
+                <h2>Light Up Your Life</h2>
+                <p>고객 만족을 넘어 고객 감동의 시대로!</p>
+              </div>
+            </div>
+            <div class="inner swiper-slide fourth">
+              <video src="./video/video04.mp4">
+              </video>
+              <div class="maintext">
+                <h2>안경체인 No.1</h2>
+                <p>전문성과 신뢰를 바탕으로 상품과 서비스 창출</p>
+              </div>
+            </div>
+            <div class="inner swiper-slide fifth">
+              <video src="./video/video05.mp4">
+              </video>
+              <div class="maintext">
+                <h2>World Best DAVICH</h2>
+                <p>맑고 밝은 세상, 인류를 행복하게</p>
+              </div>
             </div>
           </div>
-          <div class="slide">
-            <video src=""></video>
-            <div class="slide-text">
-              <h2>No.1 DAVICH Optical</h2>
-              <p>빛이 되어 드리겠습니다.</p>
-            </div>
-          </div>
-          <div class="slide">
-            <video src=""></video>
-            <div class="slide-text">
-              <h2>Light Up Your Life</h2>
-              <p>고객 만족을 넘어 고객 감동의 시대로!</p>
-            </div>
-          </div>
-          <div class="slide">
-            <video src=""></video>
-            <div class="slide-text">
-              <h2>안경체인 No.1</h2>
-              <p>전문성과 신뢰를 바탕으로 상품과 서비스 창출</p>
-            </div>
-          </div>
-          <div class="slide">
-            <video src=""></video>
-            <div class="slide-text">
-              <h2>World Best DAVICH</h2>
-              <p>맑고 밝은 세상, 인류를 행복하게</p>
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
           <div class="video-control">
             <div class="progress-wrap">
               <div class="progress-bar"></div>
@@ -159,6 +172,28 @@
           </div>
         </div>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          autoplay: {
+            delay: 2500,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          on: {
+            $('video').attr("autoplay")
+          }
+        }
+        }
+        });
+      </script>
       <div class="count-year">
         <div class="count-items">
           <span>
@@ -195,7 +230,7 @@
           </span>
         </div>
       </div>
-    </section>
+    </header>
     <section>
       <div>
         <a href="">
