@@ -26,19 +26,20 @@ a {
   position: fixed;
   top: 0;
   z-index: 100;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   /* font-weight: bold; */
+  width: 1400px;
   height: 80px;
-  line-height: 80px;
-  min-width: 1400px;
 }
 
 .header-wrap img.logo-a {
-  display: block;
-  top: 20px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -182px;
 }
 
 .header-wrap img.logo-c {
@@ -60,13 +61,16 @@ a {
 .header-wrap .gnb {
   display: flex;
   text-transform: uppercase;
-  font-size: 14px;
 }
 
-.header-wrap .gnb .main-menu {
-  padding-right: 40px;
-  box-sizing: border-box;
-}
+.header-wrap .gnb .main-menu a {
+  font-family: Public Sans,sans-serif;
+    font-weight: 500;
+    display: block;
+    padding: 28px 20px;
+    color: #fff;
+    font-size: 17px;
+    line-height: 22px;}
 
 .header-wrap .gnb .main-menu:last-child {
   padding-right: 0;
@@ -118,8 +122,12 @@ a {
 
 .header-utils {
   display: flex;
-
+  align-items: center;
+  line-height: 22px;
 }
+
+.header-utils div {padding: 5px 15px;
+    border-radius: 50px;}
 
 .header-utils button {
   font-size: 12px;
@@ -183,6 +191,16 @@ a {
   object-fit: cover;
 }
 
+.swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #fff;
+        opacity: 1;
+        background: transparent;
+      }
+
 .maintext {
   position: absolute;
   top: 50%;
@@ -233,6 +251,16 @@ a {
 
 .count-year {
   width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  overflow: hidden;
+    align-items: flex-end;
+}
+
+.count-year .count-items {
+  display: flex;
+  width: 100%;
   height: 428px;
   background: var(--blue);
   display: flex;
@@ -240,10 +268,6 @@ a {
   color: #fff;
   bottom: 0;
   z-index: 500;
-}
-
-.count-year .count-items {
-  display: flex;
 }
 
 .count-year .count-items>span {
@@ -298,8 +322,6 @@ a {
 
 .common-btn {
   font-size: 36px;
-  padding-left: 10px;
-  padding-bottom: 8px;
   position: absolute;
   border: 1px solid var(--blue);
   display: block;
@@ -330,8 +352,8 @@ a {
 
 #products > div:hover .common-btn:after{
   content: "";
+  position: absolute;
     top: 0;
-    position: absolute;
     left: 0;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -339,7 +361,6 @@ a {
     -o-transition: all 0.4s;
     transition: all 0.4s;
     background: var(--blue);
-  transform: rotate( 45deg );
   /* z-index: -1; */
   animation: diagonal .5s linear 0s 1 forwards;
 }
@@ -350,6 +371,7 @@ a {
 0% {
   width: 0px;
   height: 0px;
+  transform: rotate( 45deg );
 }
 
 100% {
@@ -361,14 +383,20 @@ a {
 #fourth {
   background-color: #f2efed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     display: block;
     background-image: url(../img/img-main-fullbanner-01.png);
+    transition: background-size .3s ease;
+}
+
+#fourth:hover {
+  background-size: 120%;
 }
 
 #fourth .inner {
   width: 1320px;
+  height: 100vh;
     min-height: 650px;
     margin: 0 auto;
     text-align: center;
@@ -383,7 +411,7 @@ a {
 }
 
 #fourth .inner .box .text-box {
-    padding-left: 50px;
+    margin-left: 50px;
     display: inline-block;
     text-align: left;
     margin-top: 160.5px;
@@ -399,4 +427,41 @@ a {
     font-size: 20px;
     line-height: 30px;
     color: #666666;
+}
+
+#fourth  .inner button {
+  margin-top: 94px;
+  margin-left: 0;
+  border: 2px solid #898785;
+  color: #222;
+  display: none;
+
+}
+
+#fourth:hover .inner button {
+  display: block;
+}
+
+#fourth  .inner button.common-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+#fourth  .inner button:hover  {
+  color: #fff;
+}
+
+#fourth  .inner button:hover:after{
+  content: "";
+    top: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    background: var(--blue);
+  /* z-index: -1; */
+  animation: diagonal .5s linear 0s 1 forwards;
 }

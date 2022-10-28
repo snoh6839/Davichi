@@ -35,13 +35,10 @@ $(function() {
       // console.log('wheel down');
       if (count >= secLeng - 1) {
         count = secLeng - 1
-      } else {
+      } else if(count < secLeng - 1) {
         count += 1;
         wheelMove();
       }
     };
-    if (eventDelta == 1 && wheelAct == false){
-      $('.count-year').addClass('.fixed-ban');
-    }
   });
 });
