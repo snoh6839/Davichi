@@ -26,20 +26,23 @@ a {
   position: fixed;
   top: 0;
   z-index: 100;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
+
   color: #fff;
   /* font-weight: bold; */
-  width: 1400px;
+
   height: 80px;
+  line-height: 80px;
+  min-width: 1400px;
 }
 
 .header-wrap img.logo-a {
+  display: block;
   position: absolute;
-  height: 100%;
   top: 0;
-  left: -182px;
 }
 
 .header-wrap img.logo-c {
@@ -68,7 +71,7 @@ a {
     font-weight: 500;
     display: block;
     padding: 28px 20px;
-    color: #fff;
+    /* color: #fff; */
     font-size: 17px;
     line-height: 22px;}
 
