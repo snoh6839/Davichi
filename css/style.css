@@ -71,6 +71,7 @@ a {
 .header-wrap img.logo-c {
   position: absolute;
   display: none;
+  top: 20px;
 }
 
 .header-wrap:hover {
@@ -657,6 +658,56 @@ z-index: -1;
 .main-notice .notice-cont .btn-all span:nth-child(2) {
     height: 20px;
     width: 1px;
+}
+
+.notice-store .store-slider {
+  height: 239px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.notice-store .store-slider .store-slider-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.notice-store .store-slider .store-slider-inner .store-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.notice-store .store-slider .store-slider-inner .store-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notice-store .store-slider .store-slider-inner .store-slide .store-desc {
+  color: #fff;
+    position: absolute;
+    top: 75px;
+    left: 404px;
+    width: 100%;
+    font-weight: 700;
+}
+
+.notice-store .store-slider .store-slider-inner .store-slide .store-desc h4 {
+  width: 276px;
+font-size: 40px;
+margin-bottom: 10px;
+line-height: 70px;
+}
+
+.notice-store .store-slider .store-slider-inner .store-slide .store-desc h4.longStoreName {
+  font-size: 32px;
+}
+
+.notice-store .store-slider .store-slider-inner .store-slide .store-desc {
+  width: 276px;
+  font-size: 22px;
 }
 
 .footer {
