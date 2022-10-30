@@ -351,51 +351,39 @@
           <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="store-slider-inner swiper2">
             <div class="parallax-bg" style="background-image: url(/img/icons/img-grand-open.png);"></div>
             <div class="swiper-wrapper">
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title longStoreName">인천검단신도시점</h4>
+                  <p class="subtitle">10월 21일</p>
               </div>
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title">상주점</h4>
+                  <p class="subtitle">10월 14일</p>
               </div>
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title">광주진월동점</h4>
+                  <p class="subtitle">09월 02일</p>
               </div>
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title">세종아름점</h4>
+                  <p class="subtitle">08월 05일</p>
               </div>
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title">화성봉담점</h4>
+                  <p class="subtitle">05월 27일</p>
               </div>
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title longStoreName">대전도마네거리점</h4>
+                  <p class="subtitle">05월 14일</p>
               </div>
-              <div class="store-slide swiper-slide">
-                <div class="store-desc">
-                  <h4 class="title store-name longStoreName" data-swiper-parallax="-300">인천검단신도시점</h4>
-                  <p class="subtitle" data-swiper-parallax="-200">10월 21일</p>
-                </div>
+              <div class="swiper-slide">
+                  <h4 class="title longStoreName">광주산성시장옆점</h4>
+                  <p class="subtitle">04월 29일</p>
+              </div>
+              <div class="swiper-slide">
+                  <h4 class="title">대전노은역점</h4>
+                  <p class="subtitle">04월 29일</p>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
           </div>
         </a>
@@ -473,17 +461,15 @@
         },
       });
       new Swiper('.swiper2', {
-
+        autoplay: true,
+        loop: true,
         speed: 600,
         parallax: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+
         });
     </script>
   </div>
