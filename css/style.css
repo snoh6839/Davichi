@@ -62,10 +62,21 @@ a {
   min-width: 1400px;
 }
 
+/* .header-wrap h1 a {
+  height: 80px;
+  line-height: 80px;
+}
+
+.header-wrap h1 a img {
+  max-width: 168px;
+  max-height: 48px;
+  line-height: 80px;
+} */
+
 .header-wrap img.logo-a {
   display: block;
   position: absolute;
-  top: 0;
+  top: 20px;
 }
 
 .header-wrap img.logo-c {
