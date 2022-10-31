@@ -5,10 +5,10 @@ $(function(){
 
     var navBar = $('.header-wrap');
 
-    if (winHeight - 70 < scTop) {
-      navBar.addClass('scroll-nav');
+    if (winHeight < scTop) {
+      navBar.addClass('scroll');
     }else {
-      navBar.removeClass('scroll-nav');
+      navBar.removeClass('scroll');
     }
   });
 
