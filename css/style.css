@@ -54,6 +54,10 @@ a {
   cursor: pointer;
 }
 
+ul, li, ol {
+  list-style: none;
+}
+
 .header-wrap {
   min-width: 1400px;
   width: 100%;
@@ -788,6 +792,7 @@ align-items: center;
 
 .footer-top .fnb li a {
   letter-spacing: -.48px;
+  color: #222;
 }
 
 .footer-top .footer-sns {
@@ -924,8 +929,8 @@ letter-spacing: -.48px;
     position: fixed;
     z-index: 99999;
     padding-top: 8px;
-    opacity: 0;
-    transform: translateY(-50%);
+    opacity: 1;
+    transform: translateY(0);
     transition: .3s;
     bottom: 30px;
     right: 50px;
