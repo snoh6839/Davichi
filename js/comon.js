@@ -16,8 +16,6 @@ window.addEventListener("wheel", function(e){
       var posTop = (page-1) * $(window).height();
       mHtml.animate({scrollTop : posTop});
 
-      var cur_pos = $(this).scrollTop();
-
   })
 
 $(function() {
@@ -26,13 +24,18 @@ $(function() {
     var scTop = $(this).scrollTop();
 
     var navBar = $('.header-wrap');
+    var topbt = $('.top-btn');
 
-    if (winHeight < scTop) {
+    if (winHeight < scTop - 70 ) {
       navBar.addClass('scroll');
+      topbt.addClass('active');
     } else {
       navBar.removeClass('scroll');
+      topbt.removeClass('active');
     }
   });
+
+
 });
 
 const counter = ($counter, max) => {

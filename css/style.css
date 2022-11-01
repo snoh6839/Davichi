@@ -199,7 +199,7 @@ ul, li, ol {
   min-width: 1500px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* position: absolute; */
 }
 
@@ -949,9 +949,14 @@ section.main-notice .swiper-slide .subtitle {
   transition: .3s;
   bottom: 30px;
   right: 50px;
+  opacity: 0;
 }
 
-.top-btn img {
+.top-btn.active {
+  opacity: 1;
+}
+
+.top-btn a img {
   width: 24px;
   height: 25px;
 }
