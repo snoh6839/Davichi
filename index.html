@@ -390,17 +390,17 @@
       <article class="notice-cont">
         <h3>다비치 소식</h3>
         <div class="notice-desc-wrap">
-          <a href="https://davich.com/whatsnew/davichNewsDetail/598" class="notice-desc">
+          <a class="notice-desc">
             <h4 class="notice-ttl"> [전자신문] 인디뮤직 버스커 버추얼 뮤지션 ‘스카이(SKY)’, 가상인간 최초 웹드라마 ‘미녀’ OST 참여 </h4>
           </a>
-          <a href="https://davich.com/whatsnew/davichNewsDetail/597" class="notice-desc">
+          <a class="notice-desc">
             <h4 class="notice-ttl"> [시사뉴스] 다비치렌즈, 콘택트렌즈 ‘메리링’ 출시 </h4>
           </a>
-          <a href="https://davich.com/whatsnew/davichNewsDetail/596" class="notice-desc">
+          <a class="notice-desc">
             <h4 class="notice-ttl"> [경상일보] 다비치안경, ‘해운대해수욕장입구점’ 리뉴얼 오픈 기념 이벤트 </h4>
           </a>
         </div>
-        <a href="https://davich.com/whatsnew/davichNews" class="btn-all">
+        <a class="btn-all">
           <span></span>
           <span></span>
         </a>
@@ -408,7 +408,7 @@
       <article class="notice-cont swiper-container">
         <h3>신규 오픈 매장</h3>
         <a class="store-slider">
-          <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="store-slider-inner swiper2">
+          <div class="store-slider-inner swiper2">
             <div class="parallax-bg" style="background-image: url(/img/icons/img-grand-open.png);"></div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -520,7 +520,8 @@
           },
         },
       });
-      new Swiper('.swiper2', {
+
+      var swiper = new Swiper(".swiper2", {
         autoplay: true,
         loop: true,
         speed: 600,
@@ -528,8 +529,7 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
-        },
-
+        }
       });
     </script>
   </div>

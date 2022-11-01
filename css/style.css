@@ -481,7 +481,7 @@ ul, li, ol {
   font-size: 45px;
 }
 
-.fourth .inner .subtitle {
+.fourth > .inner > .subtitle {
   margin-top: 22px;
   font-size: 20px;
   line-height: 30px;
@@ -596,6 +596,7 @@ ul, li, ol {
   height: calc(100vh - 80px);
   width: 1400px;
   margin: 0 auto;
+  /* padding-bottom: 40px; */
 }
 
 .myfeed-insta h2 {
@@ -636,6 +637,10 @@ ul, li, ol {
   height: 100%;
   object-fit: cover;
   transition: .3s;
+}
+
+.myfeed-insta .instafeed-inner .instafeed-cont:hover .instafeed-img {
+  transform: scale(1.2);
 }
 
 .myfeed-insta .instafeed-inner .instafeed-cont .instafeed-type {
@@ -747,6 +752,7 @@ section.main-notice .swiper-slide .title {
   margin-bottom: 10px;
   line-height: 70px;
   width: 276px;
+  margin-left: 376px;
 }
 
 section.main-notice .swiper-slide .title.longStoreName {
@@ -756,6 +762,7 @@ section.main-notice .swiper-slide .title.longStoreName {
 section.main-notice .swiper-slide .subtitle {
   width: 276px;
   font-size: 22px;
+  margin-left: 376px;
 }
 
 .footer {
