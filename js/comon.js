@@ -7,7 +7,7 @@ window.addEventListener("wheel", function(e){
   $(window).on("wheel", function(e) {
       if(mHtml.is(":animated")) return;
       if(e.originalEvent.deltaY > 0) {
-          if(page == 9) return;
+          if(page == 7) return;
           page++;
       } else if(e.originalEvent.deltaY < 0) {
           if(page == 1) return;
@@ -26,7 +26,7 @@ $(function() {
     var navBar = $('.header-wrap');
     var topbt = $('.top-btn');
 
-    if (winHeight < scTop - 70 ) {
+    if (winHeight < scTop - 80 ) {
       navBar.addClass('scroll');
       topbt.addClass('active');
     } else {
