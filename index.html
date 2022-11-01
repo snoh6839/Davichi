@@ -104,7 +104,7 @@
               </li>
               <li class="main-menu">
                 <a>WHAT'S NEW</a>
-                <div>
+                <div class="sub-menu">
                   <ul class="sub-menu-4">
                     <li>
                       <a>광고/홍보영상​</a>
@@ -146,14 +146,13 @@
               </a>
             </div>
             <div class="header-market">
-              <a class="el-btn-icon">
+              <a class="btn-icon">
                 <span>다비치 마켓</span>
                 <img src="./img/icons/icon-arrow.png" alt="cart icon" class="header-cart-icon">
               </a>
             </div>
           </div>
         </div>
-        <hr>
       </header>
       <div class="swiper-container">
         <div id='mainbanner' class="swiper mySwiper">
@@ -202,20 +201,10 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination">
-            <div class="video-control">
-              <div class="progress-wrap">
-                <div class="progress-bar"></div>
-                <div class="progress-bar"></div>
-                <div class="progress-bar"></div>
-                <div class="progress-bar"></div>
-                <div class="progress-bar"></div>
-                <div class="progress-bar"></div>
-              </div>
-              <div class="control-btn">
-                <button class="play"></button>
-                <button class="pause"></button>
-              </div>
-            </div>
+          </div>
+          <div class="control-btn">
+            <button class="play"></button>
+            <button class="pause"></button>
           </div>
 
           <div class="scroll-mouse">
@@ -516,7 +505,7 @@
           el: ".swiper-pagination",
           clickable: true,
           renderBullet: function(index, className) {
-            return '<span class="' + className + '">' + 0 + (index + 1) + "</span>";
+            return '<span class="' + className + '">' + 0 + (index + 1) + '</span><div class="progress-bar"></div>';
           },
         },
       });
