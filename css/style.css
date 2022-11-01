@@ -76,13 +76,13 @@ ul, li, ol {
   border: none;
 }
 
-.scroll , .header-wrap:hover {
+.scroll, .header-wrap:hover {
   position: fixed;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
 }
 
-.scroll hr,  .header-wrap:hover hr {
+.scroll hr, .header-wrap:hover hr {
   border: none;
   height: 1px;
   background-color: #222;
@@ -117,7 +117,7 @@ ul, li, ol {
   left: -182px;
 }
 
-.scroll .header-inner h1 a img,  .header-wrap:hover .header-inner h1 a img  {
+.scroll .header-inner h1 a img, .header-wrap:hover .header-inner h1 a img {
   left: 0;
 }
 
@@ -250,7 +250,6 @@ ul, li, ol {
 /* .swiper-pagination {
   position: absolute;
 } */
-
 .swiper-button-next:after {
   content: url("../img/icons/btn-caret-right.png");
   margin-right: 50px;
@@ -572,7 +571,6 @@ ul, li, ol {
   overflow: hidden;
 }
 
-
 .quick-menu .quick-items .quick-item .quick-item-inner .quick-img img {
   position: relative;
 }
@@ -581,19 +579,17 @@ ul, li, ol {
   left: -160px;
 }
 
-
 .quick-menu .quick-items .quick-item .quick-item-inner h3 {
   font-size: 23px;
-line-height: 34px;
-text-align: center;
-color: #fff;
-font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
 }
 
 .quick-menu .quick-items .quick-item:hover .quick-item-inner h3 {
   color: #0056aa;
 }
-
 
 .myfeed-insta {
   padding-top: 40px;
@@ -613,7 +609,7 @@ font-weight: 700;
 .myfeed-insta .inner-wrap {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .myfeed-insta .instafeed-inner {
@@ -700,24 +696,24 @@ font-weight: 700;
 
 .main-notice .notice-cont .btn-all::before {
   content: "";
-position: absolute;
-top: 0;
-left: 0;
-background-color: #0056aa;
-width: 200%;
-height: 100%;
-transform: skewX(-40deg) translateX(-130%);
-transition: .3s;
-z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0056aa;
+  width: 200%;
+  height: 100%;
+  transform: skewX(-40deg) translateX(-130%);
+  transition: .3s;
+  z-index: -1;
 }
 
 .main-notice .notice-cont .btn-all span {
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #222;
-    display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  display: block;
 }
 
 .main-notice .notice-cont .btn-all span:first-child {
@@ -726,17 +722,17 @@ z-index: -1;
 }
 
 .main-notice .notice-cont .btn-all span:nth-child(2) {
-    height: 20px;
-    width: 1px;
+  height: 20px;
+  width: 1px;
 }
 
 section.main-notice .parallax-bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        background-repeat: no-repeat;
-      }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
 
 section.main-notice .swiper-slide {
   color: #fff;
@@ -747,38 +743,37 @@ section.main-notice .swiper-slide {
 }
 
 section.main-notice .swiper-slide .title {
-              font-size: 40px;
-              margin-bottom: 10px;
-              line-height: 70px;
-              width: 276px;
-
-            }
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 70px;
+  width: 276px;
+}
 
 section.main-notice .swiper-slide .title.longStoreName {
   font-size: 32px;
 }
 
 section.main-notice .swiper-slide .subtitle {
-              width: 276px;
-              font-size: 22px;
-            }
+  width: 276px;
+  font-size: 22px;
+}
 
 .footer {
   width: 100%;
-    background: #f9f9f9;
-    line-height: 26px;
+  background: #f9f9f9;
+  line-height: 26px;
 }
 
 .footer-inner {
   width: 1400px;
-    margin: auto;
-    padding: 70px 0;
+  margin: auto;
+  padding: 70px 0;
 }
 
 .footer-top {
   display: flex;
-justify-content: space-between;
-align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-top .fnb {
@@ -858,8 +853,8 @@ align-items: center;
 
 .footer .footer-inner .footer-body .footer-info p {
   margin: 32px 0;
-line-height: 26px;
-letter-spacing: -.48px;
+  line-height: 26px;
+  letter-spacing: -.48px;
 }
 
 .footer .footer-inner .footer-body .footer-info p span {
@@ -884,16 +879,16 @@ letter-spacing: -.48px;
 
 .footer .footer-inner .footer-body .footer-familysite .familysite-btn {
   color: #555;
-    border: 1px solid #dedede;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    text-align: left;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
+  border: 1px solid #dedede;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
 }
 
 .footer .footer-inner .footer-body .footer-familysite .familysite-btn span {
@@ -902,19 +897,19 @@ letter-spacing: -.48px;
 }
 
 .footer .footer-inner .footer-body .footer-familysite .familysite-link {
-    position: absolute;
-    width: 100%;
-    bottom: 100%;
-    left: 0;
-    border: 1px solid #dedede;
-    border-bottom: none;
-    box-sizing: border-box;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  border: 1px solid #dedede;
+  border-bottom: none;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
 }
 
-.footer .footer-inner .footer-body .footer-familysite .familysite-link a{
+.footer .footer-inner .footer-body .footer-familysite .familysite-link a {
   width: 100%;
   color: #555;
   box-sizing: border-box;
@@ -923,17 +918,17 @@ letter-spacing: -.48px;
 
 .top-btn {
   width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #003a70;
-    position: fixed;
-    z-index: 99999;
-    padding-top: 8px;
-    opacity: 1;
-    transform: translateY(0);
-    transition: .3s;
-    bottom: 30px;
-    right: 50px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #003a70;
+  position: fixed;
+  z-index: 99999;
+  padding-top: 8px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: .3s;
+  bottom: 30px;
+  right: 50px;
 }
 
 .top-btn img {

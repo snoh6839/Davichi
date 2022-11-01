@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
   $(window).scroll(function() {
     var winHeight = $(window).height();
     var scTop = $(this).scrollTop();
@@ -7,7 +7,7 @@ $(function(){
 
     if (winHeight < scTop) {
       navBar.addClass('scroll');
-    }else {
+    } else {
       navBar.removeClass('scroll');
     }
   });
