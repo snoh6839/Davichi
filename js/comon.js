@@ -64,3 +64,9 @@ window.onload = () => {
   setTimeout(() => counter( document.querySelector(".count4"), 1200), 2000);
 
 }
+
+const fambtn = document.querySelector('.familysite-btn');
+
+fambtn.addEventListener('click', () => {
+  fambtn.classList.toggle('clicked');
+})

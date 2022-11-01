@@ -475,57 +475,55 @@
             <small>COPYRIGHT© DAVICH OPTICAL. ALL RIGHTS RESERVED.</small>
           </div>
           <div class="footer-familysite">
-            <button class="familysite-btn">
-              <span>Family Site</span>
-              <img src="./img/icons/select-arrow.png" alt="arrow">
-            </button>
-            <div class="familysite-link">
-              <a href="https://www.davichmarket.com/" target="_blank">다비치마켓</a>
-              <a href="http://www.bibiem.co.kr/" target="_blank">bibiem</a>
-              <a href="https://www.davichhearing.com/" target="_blank">다비치보청기</a>
-              <a href="https://www.kvisionoptical.com/" target="_blank">K비젼안경</a>
-            </div>
+            <select class="familysite-btn">
+              <option value="Family Site" selected disabled>Family Site</option>
+              <option>다비치마켓</option>
+              <option>bibiem</option>
+              <option>다비치보청기</option>
+              <option>K비젼안경</option>
+            </select>
           </div>
         </div>
       </div>
-    </footer>
-    <button class="top-btn">
-      <a href="#header">
-        <img src="./img/icons/btn-top.png" alt="top button icon">
-      </a>
-    </button>
+  </div>
+  </footer>
+  <button class="top-btn">
+    <a href="#header">
+      <img src="./img/icons/btn-top.png" alt="top button icon">
+    </a>
+  </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        // autoplay: {
-        //   delay: 2500,
-        // },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      // autoplay: {
+      //   delay: 2500,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function(index, className) {
+          return '<span class="' + className + '">' + 0 + (index + 1) + '</span><div class="progress-bar"></div>';
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function(index, className) {
-            return '<span class="' + className + '">' + 0 + (index + 1) + '</span><div class="progress-bar"></div>';
-          },
-        },
-      });
+      },
+    });
 
-      var swiper = new Swiper(".swiper2", {
-        autoplay: true,
-        loop: true,
-        speed: 600,
-        parallax: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        }
-      });
-    </script>
+    var swiper = new Swiper(".swiper2", {
+      autoplay: true,
+      loop: true,
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+  </script>
   </div>
 </body>
 
