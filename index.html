@@ -154,7 +154,6 @@
           </div>
         </div>
       </header>
-      <div class="swiper-container">
         <div id='mainbanner' class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="inner swiper-slide first">
@@ -212,7 +211,6 @@
             <img src="./img/icons/icon-scroll.png">
           </div>
         </div>
-      </div>
     </section>
 
     <section class="count-year">
@@ -272,13 +270,13 @@
         <div class="box">
           <div class="text-box">
             <h2>눈건강<br>시력지킴이</h2>
-            <div class="subtitle">눈건강 시력 지킴이는 소외된 어려운 이웃까지 맑고 밝게 비춰주는<br>봉사단으로 전국 사회봉사시설을 방문해 시력검사 및 돋보기, 교정용 안경을 무료로 제공합니다.<br>다비치는 모두가 함께하는 더 나은 사회를 만들기 위해 기여하겠습니다.</div>
+            <div class="sub-title">눈건강 시력 지킴이는 소외된 어려운 이웃까지 맑고 밝게 비춰주는<br>봉사단으로 전국 사회봉사시설을 방문해 시력검사 및 돋보기, 교정용 안경을 무료로 제공합니다.<br>다비치는 모두가 함께하는 더 나은 사회를 만들기 위해 기여하겠습니다.</div>
             <a href="#" class="common-btn">
               자세히 보기
             </a>
           </div>
         </div>
-
+        <img src="./img/img-main-fullbanner-01.png" alt="fullbanner-01">
       </div>
     </section>
 
@@ -287,14 +285,14 @@
         <div class="box">
           <div class="text-box">
             <h2>고객가치<br>경영연구원</h2>
-            <div class="subtitle">안경업계 최초 서울지방노동청에서 자체<br>훈련기관으로 승인 받은 안경사 전문 교육기관입니다.<br>다비치 고객가치경영연구원에서 여러분의 꿈을 이루세요.</div>
-            <a href="#" class="common-btn">
+            <div class="sub-title">안경업계 최초 서울지방노동청에서 자체<br>훈련기관으로 승인 받은 안경사 전문 교육기관입니다.<br>다비치 고객가치경영연구원에서 여러분의 꿈을 이루세요.</div>
+            <span href="#" class="common-btn">
               자세히 보기
-            </a>
+            </span>
           </div>
         </div>
-
       </div>
+      <img src="./img/img-main-fullbanner-02.png" alt="fullbanner-02">
     </section>
 
     <section class="quick-menu">
@@ -409,46 +407,45 @@
       </article>
       <article class="notice-cont swiper-container">
         <h3>신규 오픈 매장</h3>
-        <a class="store-slider">
           <div class="store-slider-inner swiper2">
-            <div class="parallax-bg" style="background-image: url(/img/icons/img-grand-open.png);"></div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            <div class="parallax-bg"  style="background-image: url(/img/icons/img-grand-open.png);"></div>
+            <div class="swiper-wrapper" >
+              <div class="mySlideDiv show">
                 <h4 class="title longStoreName">인천검단신도시점</h4>
                 <p class="subtitle">10월 21일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title">상주점</h4>
                 <p class="subtitle">10월 14일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title">광주진월동점</h4>
                 <p class="subtitle">09월 02일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title">세종아름점</h4>
                 <p class="subtitle">08월 05일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title">화성봉담점</h4>
                 <p class="subtitle">05월 27일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title longStoreName">대전도마네거리점</h4>
                 <p class="subtitle">05월 14일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title longStoreName">광주산성시장옆점</h4>
                 <p class="subtitle">04월 29일</p>
               </div>
-              <div class="swiper-slide">
+              <div class="mySlideDiv">
                 <h4 class="title">대전노은역점</h4>
                 <p class="subtitle">04월 29일</p>
               </div>
+              <a class="prev" onclick="prevSlide()">&#10094;</a>
+              <a class="next" onclick="nextSlide()">&#10095;</a>
             </div>
-            <div class="swiper-pagination"></div>
           </div>
-        </a>
 
         <a class="btn-all">
           <span></span><span></span>
@@ -526,16 +523,15 @@
       },
     });
 
-    var swiper = new Swiper(".swiper2", {
-      autoplay: true,
-      loop: true,
-      speed: 600,
-      parallax: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      }
-    });
+    // var swiper = new Swiper(".swiper2", {
+    //   autoplay: true,
+    //   loop: true,
+    //   parallax: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   }
+    // });
   </script>
   </div>
 </body>
