@@ -23,14 +23,14 @@ $(function() {
     var winHeight = $(window).height();
     var scTop = $(this).scrollTop();
 
-    var navBar = $('.header-wrap');
+    var header = $('.header-wrap');
     var topbt = $('.top-btn');
 
     if (winHeight < scTop - 80 ) {
-      navBar.addClass('scroll');
+      header.addClass('scroll');
       topbt.addClass('active');
     } else {
-      navBar.removeClass('scroll');
+      header.removeClass('scroll');
       topbt.removeClass('active');
     }
   });
@@ -63,10 +63,9 @@ window.onload = () => {
   setTimeout(() => counter( document.querySelector(".count3"), 41408), 2000);
   setTimeout(() => counter( document.querySelector(".count4"), 1200), 2000);
 
+  const fambtn = document.querySelector('.familysite-btn');
+
+  fambtn.addEventListener('click', () => {
+    fambtn.classList.toggle('clicked');
+  })
 }
-
-const fambtn = document.querySelector('.familysite-btn');
-
-fambtn.addEventListener('click', () => {
-  fambtn.classList.toggle('clicked');
-})
