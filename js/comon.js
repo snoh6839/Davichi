@@ -26,14 +26,14 @@ $(function() {
     var header = $('.header-wrap');
     var topbt = $('.top-btn');
 
-    if (winHeight < scTop - 80 ) {
-      header.addClass('scroll');
-      topbt.addClass('active');
-    } else {
-      header.removeClass('scroll');
-      topbt.removeClass('active');
-    }
-  });
+  if (0 < scTop ) {
+    header.addClass('scroll');
+    topbt.addClass('active');
+  } else {
+    header.removeClass('scroll');
+    topbt.removeClass('active');
+  }
+});
 
 
 });
