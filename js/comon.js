@@ -5,16 +5,22 @@ window.addEventListener("wheel", function(e){
   mHtml.animate({scrollTop : 0},10);
 
   $(window).on("wheel", function(e) {
+    var posTop = (page-1) * $(window).height();
       if(mHtml.is(":animated")) return;
       if(e.originalEvent.deltaY > 0) {
           if(page == 7) return;
           page++;
+
+          if(page == 1){
+            mHtml.animate({scrollTop : posTop});
+          }else{
+            mHtml.animate({scrollTop : posTop});
+          }
       } else if(e.originalEvent.deltaY < 0) {
           if(page == 1) return;
           page--;
+          mHtml.animate({scrollTop : posTop});
       }
-      var posTop = (page-1) * $(window).height();
-      mHtml.animate({scrollTop : posTop});
 
   })
 
@@ -33,6 +39,8 @@ $(function() {
     header.removeClass('scroll');
     topbt.removeClass('active');
   }
+
+
 
 // let bulletActive = document.querySelector('.swiper-pagination-bullet-active');
 // bulletActive.appand('<div class="progress-bar"></div>');
