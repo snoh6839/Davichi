@@ -200,11 +200,11 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination">
-            <div class="progress-bar"></div>
           </div>
           <div class="control-btn">
             <button class="play"></button>
             <button class="pause"></button>
+
           </div>
 
           <div class="scroll-mouse">
@@ -408,7 +408,7 @@
       <article class="notice-cont swiper-container">
         <h3>신규 오픈 매장</h3>
           <div class="store-slider-inner swiper2">
-            <div class="parallax-bg"  style="background-image: url(/img/icons/img-grand-open.png);"></div>
+            <div class="parallax-bg"  style="background-image: url(./img/icons/img-grand-open.png);"></div>
             <div class="swiper-wrapper" >
               <div class="mySlideDiv show">
                 <h4 class="title longStoreName">인천검단신도시점</h4>
@@ -518,7 +518,7 @@
         el: ".swiper-pagination",
         clickable: true,
         renderBullet: function(index, className) {
-          return '<span class="' + className + '">' + 0 + (index + 1) + '</span><div class="progress-bar"></div>';
+          return '<span class="' + className + '">' + 0 + (index + 1) + '</span>';
         },
       },
     });

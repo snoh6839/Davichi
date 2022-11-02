@@ -34,6 +34,8 @@ $(function() {
     topbt.removeClass('active');
   }
 
+// let bulletActive = document.querySelector('.swiper-pagination-bullet-active');
+// bulletActive.appand('<div class="progress-bar"></div>');
 
 });
 
