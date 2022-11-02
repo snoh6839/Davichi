@@ -33,6 +33,8 @@ $(function() {
     header.removeClass('scroll');
     topbt.removeClass('active');
   }
+
+
 });
 
 const fambtn = document.querySelector('.familysite-btn');
