@@ -1,3 +1,5 @@
+// console.log($('.count-year').offset.top);
+
 window.addEventListener("wheel", function(e){
   e.preventDefault();},{passive : false});
   var mHtml = $("html");
@@ -6,22 +8,26 @@ window.addEventListener("wheel", function(e){
 
   $(window).on("wheel", function(e) {
     var posTop = (page-1) * $(window).height();
+    // var vpx = $(window).height();
       if(mHtml.is(":animated")) return;
+      // var target1 = $('.count-year').offset().top;
+      // var target2 = $('#products').offset().top;
+      // console.log(target1);
       if(e.originalEvent.deltaY > 0) {
-          if(page == 7) return;
+          if(page == 1) {
+            mHtml.animate({scrollTop : posTop - 540});
+          }else if(page == 2) {
+            mHtml.animate({scrollTop : posTop + 540});
+          }else if(2 < page < 7){
+            mHtml.animate({scrollTop : posTop});
+          }else if(page == 7) {return;}
           page++;
 
-          if(page == 1){
-            mHtml.animate({scrollTop : posTop});
-          }else{
-            mHtml.animate({scrollTop : posTop});
-          }
       } else if(e.originalEvent.deltaY < 0) {
           if(page == 1) return;
           page--;
-          mHtml.animate({scrollTop : posTop});
+          mHtml.animate({scrollTop : posTop})
       }
-
   })
 
 $(function() {
