@@ -1,4 +1,25 @@
 // console.log($('.count-year').offset.top);
+const counter = ($counter, max) => {
+  let now = max;
+  const handle = setInterval(() => {
+    $counter.innerHTML = Math.ceil(max - now);
+    // 목표수치에 도달하면 정지
+    if (now < 1) {
+      clearInterval(handle);
+    }
+    // 증가되는 값이 계속하여 작아짐
+    const step = now / 10;
+    // 값을 적용시키면서 다음 차례에 영향을 끼침
+    now -= step;
+  }, 50);
+}
+//
+// window.onload = () => {
+//   setTimeout(() => counter( document.querySelector(".count1"), 283), 3000);
+//   setTimeout(() => counter( document.querySelector(".count2"), 418), 3000);
+//   setTimeout(() => counter( document.querySelector(".count3"), 408), 3000);
+//   setTimeout(() => counter( document.querySelector(".count4"), 200), 3000);
+// }
 
 window.addEventListener("wheel", function(e){
   e.preventDefault();},{passive : false});
@@ -13,22 +34,34 @@ window.addEventListener("wheel", function(e){
       // var target1 = $('.count-year').offset().top;
       // var target2 = $('#products').offset().top;
       // console.log(target1);
-      if(e.originalEvent.deltaY > 0) {
+      console.log(page);
+      if(e.originalEvent.deltaY > 0 && page < 8) {
           if(page == 1) {
-            mHtml.animate({scrollTop : posTop - 540});
-          }else if(page == 2) {
-            mHtml.animate({scrollTop : posTop + 540});
-          }else if(2 < page < 7){
+            mHtml.animate({scrollTop : $(window).height() - 540});
+            setTimeout(() => counter( document.querySelector(".count1"), 283));
+            setTimeout(() => counter( document.querySelector(".count2"), 418));
+            setTimeout(() => counter( document.querySelector(".count3"), 408));
+            setTimeout(() => counter( document.querySelector(".count4"), 200));
+          }else if (page == 5) {
+            mHtml.animate({scrollTop : posTop + 540 - 500});
+          }else if (page == 6){
             mHtml.animate({scrollTop : posTop});
-          }else if(page == 7) {return;}
+          }else{
+            mHtml.animate({scrollTop : posTop + 540});
+          }
           page++;
 
-      } else if(e.originalEvent.deltaY < 0) {
-          if(page == 1) return;
+      } else if(e.originalEvent.deltaY < 0 && page > 0) {
+        if(1 < page < 8){
+          mHtml.animate({scrollTop : posTop});
+        }else {
+          return;
+        }
           page--;
-          mHtml.animate({scrollTop : posTop})
       }
   })
+
+
 
 $(function() {
   $(window).scroll(function() {
@@ -61,27 +94,7 @@ fambtn.addEventListener('click', () => {
 
 });
 
-const counter = ($counter, max) => {
-  let now = max;
-  const handle = setInterval(() => {
-    $counter.innerHTML = Math.ceil(max - now);
-    // 목표수치에 도달하면 정지
-    if (now < 1) {
-      clearInterval(handle);
-    }
-    // 증가되는 값이 계속하여 작아짐
-    const step = now / 10;
-    // 값을 적용시키면서 다음 차례에 영향을 끼침
-    now -= step;
-  }, 50);
-}
 
-window.onload = () => {
-  setTimeout(() => counter( document.querySelector(".count1"), 283), 3000);
-  setTimeout(() => counter( document.querySelector(".count2"), 418), 3000);
-  setTimeout(() => counter( document.querySelector(".count3"), 408), 3000);
-  setTimeout(() => counter( document.querySelector(".count4"), 200), 3000);
-}
 
 $(document).ready(function () {
 	$(".mySlideDiv").not(".show").hide(); //화면 로딩 후 첫번째 div를 제외한 나머지 숨김
