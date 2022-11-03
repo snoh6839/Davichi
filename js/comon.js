@@ -35,7 +35,8 @@ window.addEventListener("wheel", function(e){
       // var target2 = $('#products').offset().top;
       // console.log(target1);
       console.log(page);
-      if(e.originalEvent.deltaY > 0 && page < 8) {
+      if(e.originalEvent.deltaY > 0) {
+        if(page == 8) return;
           if(page == 1) {
             mHtml.animate({scrollTop : $(window).height() - 540});
             setTimeout(() => counter( document.querySelector(".count1"), 283));
@@ -51,14 +52,12 @@ window.addEventListener("wheel", function(e){
           }
           page++;
 
-      } else if(e.originalEvent.deltaY < 0 && page > 0) {
-        if(1 < page < 8){
-          mHtml.animate({scrollTop : posTop});
-        }else {
-          return;
-        }
+      } else if(e.originalEvent.deltaY < 0) {
+        if(page == 0) return;
           page--;
+          mHtml.animate({scrollTop : posTop});
       }
+      var cur_pos = $(this).scrollTop();
   })
 
 
