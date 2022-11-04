@@ -60,6 +60,8 @@ ul, li, ol {
   list-style: none;
 }
 
+
+
 .common-btn {
   position: relative;
   width: 200px;
@@ -238,8 +240,6 @@ ul, li, ol {
   min-width: 1500px;
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  /* position: absolute; */
 }
 
 .mySwiper .swiper-slide {
@@ -260,46 +260,64 @@ ul, li, ol {
   object-fit: cover;
 }
 
-.mySwiper .swiper-pagination {
+.mySwiper .video-control {
   position: absolute;
   width: 1400px;
-  /* left: calc(50% + 7px); */
-  /* transform: translate(-50%,-50%); */
-  /* top: 70%; */
+  left: calc(50% + 7px);
+  transform: translate(-50%,-50%);
+  top: 70%;
   display: flex;
-  margin-left: 110px;
-  margin-bottom: 180px;
-  align-items: center;
+  z-index: 900;
+}
+
+.mySwiper .video-control .swiper-pagination {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  margin-left: 50px;
 
 }
 
-.mySwiper .swiper-pagination .progress  {
-  display: none;
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  background-color: transparent;
+}
+
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet p {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet .progress {
+  /* display: none; */
+  display: flex;
   width: 60px;
   height: 2px;
-  background: hsla(0,0%,100%,.5);;
+  background: hsla(0,0%,100%,.5);
+  /* position: relative; */
 }
 
-.mySwiper .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, .5);
-  opacity: 1;
-  background: transparent;
-  font-family: 'Public Sans',sans-serif;
-  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
+/* .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active > .progress {
+  display: flex;
+} */
 
+.mySwiper .video-control .slider-ctrl-btn-box {
+  margin-left: 260px;
+  margin-bottom: 3px;
 }
 
-.mySwiper .swiper-pagination-bullet-active {
-  color: rgba(255, 255, 255, 1);
+.mySwiper .video-control .slider-ctrl-btn-box button {
+  padding: 0 5px;
+  background-color: transparent;
+  border: 0;
 }
 
-.mySwiper .swiper-pagination-bullet-active + .progress  {
-  display: block;
+.mySwiper .video-control .slider-ctrl-btn-box button.on {
+  opacity: .4;
 }
 
 .mySwiper .maintext {
@@ -733,7 +751,7 @@ ul, li, ol {
 }
 
 .swiper2 .swiper-wrapper {
-  transform: translateY(50%);
+  transform: translateY(40%);
 }
 .swiper2 .mySlideDiv  {
   color: #fff;
@@ -761,10 +779,15 @@ ul, li, ol {
   margin-left: 376px;
 }
 
+.swiper2 .mySlideDiv .mySlideDiv-page {
+  transform: translateX(340px);
+  /* margin-top: 10px; */
+}
+
 .swiper-wrapper .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -925,6 +948,7 @@ ul, li, ol {
 .footer .footer-inner .footer-body .footer-familysite .familysite-btn:focus {
   border: 1px solid #dedede;
   background-image: url('../img/icons/select_box_arrow_focus.png');
+  appearance: none;
 }
 
 select::-ms-expand { /*IE 브라우저 select box arrow button 이미지 삭제*/

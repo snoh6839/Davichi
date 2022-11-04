@@ -156,7 +156,7 @@
       </header>
       <div id='mainbanner' class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="inner swiper-slide first">
+          <div class="inner swiper-slide first" data-swiper-autoplay="13000">
             <video src="./video/video01.mp4" muted="muted" autoplay="autoplay" loop="loop">
             </video>
             <div class="maintext">
@@ -164,7 +164,7 @@
               <p>당신과 함께하는 우리는 다비치 입니다.</p>
             </div>
           </div>
-          <div class="inner swiper-slide second">
+          <div class="inner swiper-slide second" data-swiper-autoplay="10000">
             <video src="./video/video02.mp4" muted="muted" autoplay="autoplay" loop="loop">
             </video>
             <div class="maintext">
@@ -172,7 +172,7 @@
               <p>빛이 되어 드리겠습니다.</p>
             </div>
           </div>
-          <div class="inner swiper-slide third">
+          <div class="inner swiper-slide third" data-swiper-autoplay="11000">
             <video src="./video/video03.mp4" muted="muted" autoplay="autoplay" loop="loop">
             </video>
             <div class="maintext">
@@ -180,7 +180,7 @@
               <p>고객 만족을 넘어 고객 감동의 시대로!</p>
             </div>
           </div>
-          <div class="inner swiper-slide fourth">
+          <div class="inner swiper-slide fourth" data-swiper-autoplay="11000">
             <video src="./video/video04.mp4" muted="muted" autoplay="autoplay" loop="loop">
             </video>
             <div class="maintext">
@@ -188,7 +188,7 @@
               <p>전문성과 신뢰를 바탕으로 상품과 서비스 창출</p>
             </div>
           </div>
-          <div class="inner swiper-slide fifth">
+          <div class="inner swiper-slide fifth" data-swiper-autoplay="24000">
             <video src="./video/video05.mp4" muted="muted" autoplay="autoplay" loop="loop">
             </video>
             <div class="maintext">
@@ -199,20 +199,17 @@
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-
-        <div class="swiper-pagination">
-          <div class="progress">
-            <progress id="progress" value="0" min="0" max="60">
-              <span id="progress-bar"></span>
-            </progress>
+        <div class="video-control">
+          <div class="swiper-pagination progress-wrap"></div>
+          <div class="slider-ctrl-btn-box">
+            <button class="btn-play on">
+              <img src="./img/icons/btn-play.png" alt="play button">
+            </button>
+            <button class="btn-pause">
+              <img src="./img/icons/btn-stop.png" alt="play button">
+            </button>
           </div>
         </div>
-        <div class="control-btn">
-          <button class="play"></button>
-          <button class="pause"></button>
-
-        </div>
-
         <div class="scroll-mouse">
           <img src="./img/icons/icon-scroll.png">
         </div>
@@ -421,34 +418,42 @@
             <div class="mySlideDiv show">
               <h4 class="title longStoreName">인천검단신도시점</h4>
               <p class="subtitle">10월 21일</p>
+              <div class="mySlideDiv-page"><br><br>1/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title">상주점</h4>
               <p class="subtitle">10월 14일</p>
+              <div class="mySlideDiv-page"><br><br>2/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title">광주진월동점</h4>
               <p class="subtitle">09월 02일</p>
+              <div class="mySlideDiv-page"><br><br>3/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title">세종아름점</h4>
               <p class="subtitle">08월 05일</p>
+              <div class="mySlideDiv-page"><br><br>4/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title">화성봉담점</h4>
               <p class="subtitle">05월 27일</p>
+              <div class="mySlideDiv-page"><br><br>5/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title longStoreName">대전도마네거리점</h4>
               <p class="subtitle">05월 14일</p>
+              <div class="mySlideDiv-page"><br><br>6/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title longStoreName">광주산성시장옆점</h4>
               <p class="subtitle">04월 29일</p>
+              <div class="mySlideDiv-page"><br><br>7/8</div>
             </div>
             <div class="mySlideDiv">
               <h4 class="title">대전노은역점</h4>
               <p class="subtitle">04월 29일</p>
+              <div class="mySlideDiv-page"><br><br>8/8</div>
             </div>
             <a class="prev" onclick="prevSlide()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
@@ -503,8 +508,8 @@
           </div>
         </div>
       </div>
+    </footer>
   </div>
-  </footer>
   <button class="top-btn">
     <a href="#header">
       <img src="./img/icons/btn-top.png" alt="top button icon">
@@ -512,35 +517,7 @@
   </button>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      // autoplay: {
-      //   delay: 2500,
-      // },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function(index, className) {
-          return '<span class="' + className + '">' + 0 + (index + 1) + '</span>';
-        },
-      },
-    });
 
-    // var swiper = new Swiper(".swiper2", {
-    //   autoplay: true,
-    //   loop: true,
-    //   parallax: true,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   }
-    // });
-  </script>
   </div>
 </body>
 
