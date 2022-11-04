@@ -1,25 +1,15 @@
-// console.log($('.count-year').offset.top);
+
 const counter = ($counter, max) => {
   let now = max;
   const handle = setInterval(() => {
     $counter.innerHTML = Math.ceil(max - now);
-    // 목표수치에 도달하면 정지
     if (now < 1) {
       clearInterval(handle);
     }
-    // 증가되는 값이 계속하여 작아짐
     const step = now / 10;
-    // 값을 적용시키면서 다음 차례에 영향을 끼침
     now -= step;
   }, 50);
 }
-//
-// window.onload = () => {
-//   setTimeout(() => counter( document.querySelector(".count1"), 283), 3000);
-//   setTimeout(() => counter( document.querySelector(".count2"), 418), 3000);
-//   setTimeout(() => counter( document.querySelector(".count3"), 408), 3000);
-//   setTimeout(() => counter( document.querySelector(".count4"), 200), 3000);
-// }
 
 window.addEventListener("wheel", function(e) {
   e.preventDefault();
@@ -34,10 +24,9 @@ mHtml.animate({
 
 $(window).on("wheel", function(e) {
   var posTop = (page - 1) * $(window).height();
-  // var vpx = $(window).height();
   if (mHtml.is(":animated")) return;
   // var target1 = $('.count-year').offset().top;
-  // var target2 = $('#products').offset().top;
+  // var target2 = $('.quickmenu').offset().top;
   // console.log(target1);
   console.log(page);
   if (e.originalEvent.deltaY > 0) {
@@ -80,8 +69,8 @@ $(window).on("wheel", function(e) {
 $(function() {
 
   var swiper = new Swiper(".mySwiper", {
-    loop: true,
     autoplay: true,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -90,19 +79,10 @@ $(function() {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function(index, className) {
-        return '<span class="swiper-pagination-bullet progress-bar"><p class="select-video-btn">0'+(index+1)+'</p><div class="progress"><div class="progress__filled bar0"></div></div></span>';
+        return '<span class="swiper-pagination-bullet progress-bar"><p class="select-video-btn">0'+(index+1)+'</p></span><div class="progress bar'+(index+1)+'"></div>';
       },
     },
   });
-
-//   var pagingSwiper = new Swiper(".mySwiper", {
-//   pagination: {
-//     el: ".swiper-hero-progress",
-//     type: "progressbar",
-//   },
-// });
-//
-// swiper.controller.control = pagingSwiper;
 
 
 
