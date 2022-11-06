@@ -297,28 +297,38 @@ ul, li, ol {
 
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet + .progress {
   display: none;
-  /* display: flex; */
   width: 60px;
   height: 2px;
-  background: hsla(0,0%,100%,.5);
+  background: hsla(0,0%,100%,.3);
   position: relative;
-  margin-top: 3px;
-  margin-left: -20px;
-  /* margin-right: 10px; */
+  margin: 3px  20px -20px 0;
 }
 
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .progress {
   display: flex;
 }
 
-.progress:after {
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .progress:before {
   content: '';
   animation-name: progressbar;
-  animation-duration: 24s;
+  animation-duration: 25s;
   background-color: #fff;
   position: absolute;
-  /* width: 0%; */
-  animation-iteration-count: infinite;
+  height: 2px;
+  width: 100%;
+}
+
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar2:before {
+  animation-duration: 14s;
+}
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar3:before {
+  animation-duration: 11s;
+}
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar4:before {
+  animation-duration: 12s;
+}
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar5:before {
+  animation-duration: 12s;
 }
 
 @keyframes progressbar {
@@ -340,10 +350,11 @@ ul, li, ol {
   padding: 0 5px;
   background-color: transparent;
   border: 0;
+  opacity: .4;
 }
 
 .mySwiper .video-control .slider-ctrl-btn-box button.on {
-  opacity: .4;
+  opacity: 1;
 }
 
 .mySwiper .maintext {

@@ -1,4 +1,5 @@
 
+
 const counter = ($counter, max) => {
   let now = max;
   const handle = setInterval(() => {
@@ -70,6 +71,7 @@ $(function() {
 
   var swiper = new Swiper(".mySwiper", {
     autoplay: true,
+    autoplayDisableOnInteraction: true,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -83,6 +85,8 @@ $(function() {
       },
     },
   });
+
+
 
 
 
