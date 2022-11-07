@@ -314,24 +314,21 @@ ul, li, ol {
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .progress:before {
   content: '';
   animation-name: progressbar;
-  animation-duration: 25s;
+  animation-duration: 10s;
   background-color: #fff;
   position: absolute;
   height: 2px;
   width: 100%;
 }
 
-.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar2:before {
-  animation-duration: 14s;
-}
-.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar3:before {
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar2:before , .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar3:before {
   animation-duration: 11s;
 }
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar4:before {
-  animation-duration: 12s;
+  animation-duration: 24s;
 }
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar5:before {
-  animation-duration: 12s;
+  animation-duration: 13s;
 }
 
 @keyframes progressbar {
