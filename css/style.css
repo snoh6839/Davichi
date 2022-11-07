@@ -281,6 +281,7 @@ ul, li, ol {
   font-weight: 600;
   display: flex;
   margin-left: 50px;
+
 }
 
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet {
@@ -288,11 +289,13 @@ ul, li, ol {
   align-items: center;
   margin-right: 30px;
   background-color: transparent;
+
 }
 
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet p {
   cursor: pointer;
   color: #fff;
+  /* background-color: red; */
 }
 
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet + .progress {
@@ -796,6 +799,7 @@ ul, li, ol {
   left: 376px;
   top: 50px;
   font-weight: 700;
+  /* transition: .6s; */
 }
 
 .swiper2 .mySlideDiv  .title {

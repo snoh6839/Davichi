@@ -86,7 +86,26 @@ $(function() {
     },
   });
 
+  // console.log($("video").get(0));
 
+$(".btn-play").click(
+  function() {
+    // swiper.autoplay.start();
+    // $("video").get(0).play();
+    $(".btn-play").addClass('on');
+    $(".btn-pause").removeClass('on');
+  }
+)
+
+$(".btn-pause").click(
+  function() {
+    // swiper.autoplay.stop();
+    // $("video").get(0).pause();
+    // $("video").autoplay.pause();
+    $(".btn-pause").addClass('on');
+    $(".btn-play").removeClass('on');
+  }
+)
 
 
 
@@ -104,12 +123,6 @@ $(function() {
       header.removeClass('scroll');
       topbt.removeClass('active');
     }
-
-
-
-    // let bulletActive = document.querySelector('.swiper-pagination-bullet-active');
-    // bulletActive.appand('<div class="progress-bar"></div>');
-
   });
 
   const fambtn = document.querySelector('.familysite-btn');
@@ -123,21 +136,15 @@ $(function() {
 
 
 $(document).ready(function() {
-  $(".mySlideDiv").not(".show").hide(); //화면 로딩 후 첫번째 div를 제외한 나머지 숨김
-
-  setInterval(nextSlide, 4000); //4초(4000)마다 다음 슬라이드로 넘어감
-
-  // $("swiper-pagination-bullet").after('<div class="progress"><progress id="progress" value="0" min="0" max="60"><span id="progress-bar"></span></progress></div>');
-
+  $(".mySlideDiv").not(".show").hide();
+  setInterval(nextSlide, 4000);
 });
 
-//이전 슬라이드
 function prevSlide() {
-  $(".mySlideDiv").hide(); //모든 div 숨김
-  var allSlide = $(".mySlideDiv"); //모든 div 객체를 변수에 저장
-  var currentIndex = 0; //현재 나타난 슬라이드의 인덱스 변수
+  $(".mySlideDiv").hide();
+  var allSlide = $(".mySlideDiv");
+  var currentIndex = 0;
 
-  //반복문으로 현재 show 클래스를 가진 div를 찾아 index 저장
   $(".mySlideDiv").each(function(index, item) {
     if ($(this).hasClass("show")) {
       currentIndex = index;
@@ -145,27 +152,20 @@ function prevSlide() {
 
   });
 
-  //새롭게 나타낼 div의 index
   var newIndex = 0;
-
   if (currentIndex <= 0) {
-    //현재 슬라이드의 index가 0인 경우 마지막 슬라이드로 보냄(무한반복)
     newIndex = allSlide.length - 1;
   } else {
-    //현재 슬라이드의 index에서 한 칸 만큼 뒤로 간 index 지정
     newIndex = currentIndex - 1;
   }
 
-  //모든 div에서 show 클래스 제거
   $(".mySlideDiv").removeClass("show");
 
-  //새롭게 지정한 index번째 슬라이드에 show 클래스 부여 후 show()
   $(".mySlideDiv").eq(newIndex).addClass("show");
   $(".mySlideDiv").eq(newIndex).show();
 
 }
 
-//다음 슬라이드
 function nextSlide() {
   $(".mySlideDiv").hide();
   var allSlide = $(".mySlideDiv");
@@ -181,10 +181,8 @@ function nextSlide() {
   var newIndex = 0;
 
   if (currentIndex >= allSlide.length - 1) {
-    //현재 슬라이드 index가 마지막 순서면 0번째로 보냄(무한반복)
     newIndex = 0;
   } else {
-    //현재 슬라이드의 index에서 한 칸 만큼 앞으로 간 index 지정
     newIndex = currentIndex + 1;
   }
 
