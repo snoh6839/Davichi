@@ -99,7 +99,7 @@ $(".btn-play").click(
     $("video")[5].play();
     $(".btn-play").addClass('on');
     $(".btn-pause").removeClass('on');
-    progressControl.css('animationPlayState' , 'running');
+    // progressControl.css('animationPlayState' , 'running');
   }
 )
 
@@ -113,7 +113,7 @@ $(".btn-pause").click(
     $("video")[5].pause();
     $(".btn-pause").addClass('on');
     $(".btn-play").removeClass('on');
-    progressControl.css('animationPlayState' , 'paused');
+    // progressControl.css('animationPlayState' , 'paused');
   }
 )
 
