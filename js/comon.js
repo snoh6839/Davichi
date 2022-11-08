@@ -81,29 +81,39 @@ $(function() {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function(index, className) {
-        return '<span class="swiper-pagination-bullet progress-bar"><p class="select-video-btn">0'+(index+1)+'</p></span><div class="progress bar'+(index+1)+'"></div>';
+        return '<span class="swiper-pagination-bullet progress-bar"><p class="select-video-btn">0'+(index+1)+'</p><div class="progress bar'+(index+1)+'"></div></span>';
       },
     },
   });
 
   // console.log($("video").get(0));
+var progressControl = $('.progress:before');
 
 $(".btn-play").click(
   function() {
-    // swiper.autoplay.start();
-    // $("video").get(0).play();
+    swiper.autoplay.start();
+    $("video")[1].play();
+    $("video")[2].play();
+    $("video")[3].play();
+    $("video")[4].play();
+    $("video")[5].play();
     $(".btn-play").addClass('on');
     $(".btn-pause").removeClass('on');
+    progressControl.css('animationPlayState' , 'running');
   }
 )
 
 $(".btn-pause").click(
   function() {
-    // swiper.autoplay.stop();
-    // $("video").get(0).pause();
-    // $("video").autoplay.pause();
+    swiper.autoplay.stop();
+    $("video")[1].pause();
+    $("video")[2].pause();
+    $("video")[3].pause();
+    $("video")[4].pause();
+    $("video")[5].pause();
     $(".btn-pause").addClass('on');
     $(".btn-play").removeClass('on');
+    progressControl.css('animationPlayState' , 'paused');
   }
 )
 

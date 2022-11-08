@@ -287,9 +287,10 @@ ul, li, ol {
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet {
   display: flex;
   align-items: center;
-  margin-right: 30px;
   background-color: transparent;
-
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
 }
 
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet p {
@@ -298,37 +299,47 @@ ul, li, ol {
   /* background-color: red; */
 }
 
-.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet + .progress {
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet > .progress {
   display: none;
   width: 60px;
   height: 2px;
   background: hsla(0,0%,100%,.3);
   position: relative;
-  margin: 3px  20px -20px 0;
+  margin-left: 10px;
 }
 
-.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .progress {
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active {
+  width: 110px;
+}
+
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active >.progress {
   display: flex;
+
 }
 
-.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .progress:before {
+.mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active > .progress:before {
   content: '';
   animation-name: progressbar;
-  animation-duration: 10s;
+  animation-play-state: running;
+  animation-duration: 11s;
   background-color: #fff;
   position: absolute;
   height: 2px;
   width: 100%;
 }
 
+.progress-pause {
+  animation-play-state: paused;
+}
+
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar2:before , .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar3:before {
-  animation-duration: 11s;
+  animation-duration: 12s;
 }
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar4:before {
-  animation-duration: 24s;
+  animation-duration: 25s;
 }
 .mySwiper .video-control .swiper-pagination .swiper-pagination-bullet-active + .bar5:before {
-  animation-duration: 13s;
+  animation-duration: 14s;
 }
 
 @keyframes progressbar {
@@ -342,8 +353,8 @@ ul, li, ol {
 
 .mySwiper .video-control .slider-ctrl-btn-box {
   margin-left: 360px;
-  margin-bottom: 3px;
-  z-index: 500;
+  margin-bottom: 20px;
+  z-index: 200;
 }
 
 .mySwiper .video-control .slider-ctrl-btn-box button {
